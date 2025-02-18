@@ -1,0 +1,16 @@
+<form action="/articles" accept-charset="UTF-8" method="post">
+  <input type="hidden" name="authenticity_token" value="ChwHeyegcpAFDdBvXvDuvbfW7yCA3e8gvhyieai7DhG28C3akh-dyuv-IBittsjPrIjETlQQvQJ91T77QQ8xWA" autocomplete="off">
+  <div class="form-group">
+    <label for="article_title">Title</label>
+    <input type="text" class="form-control" name="article[title]" id="article_title">
+  </div>
+  <div class="form-group">
+    <label for="article_author">Author</label>
+    <input type="text" name="article[author]" id="article_author">
+  </div>
+    <div class="form-group">
+    <label for="article_content">Content</label>
+    <input type="text" name="article[content]" id="article_content">
+  </div>
+  <input type="submit" name="commit" value="Create Article" data-disable-with="Create Article">
+</form>

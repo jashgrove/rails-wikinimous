@@ -1,0 +1,24 @@
+<nav class="navbar navbar-light bg-light">
+  <span class="navbar-brand mb-0 h1 px-4">Articles</span>
+  <%= link_to new_article_path do%>
+  <button type="button" class="btn btn-secondary btn-lg px-4">
+    New Article
+  </button>
+  <% end %>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <% @article.each do |a| %>
+    <div class="col-sm">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title"> <%= a.title %></h5>
+          <h6 class="card-subtitle mb-2 text-muted"><%= a.author %></h6>
+          <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
